@@ -4,6 +4,10 @@
 </head>
 <body style="background-color:#000000;color:white;text-align:center;font-size:25px" onload="go()"><br>
 <script>
+if(document.cookie.indexOf('kex=0') >= 0)
+    document.location.href = 'index702.html';
+</script>
+<script>
 function print(){}
 
 var scriptCode = '';
@@ -33,12 +37,12 @@ function done()
 window.midExploit = function()
 {
     if(document.location.hash)
-    {     
+    {
         var s = decodeURIComponent(document.location.hash.substr(3));
-        preloadScripts(['kex.js', s, 'c-code.js'], go);
+        preloadScripts(['702.js', 'jb.js', 'mira.js', s, 'code.js'], go);
     }
     else
-        preloadScripts(['kex.js', 'c-code.js'], go);
+        preloadScripts(['702.js', 'jb.js', 'mira.js', 'code.js'], go);
 }
 
 window.postExploit = function()
@@ -51,12 +55,11 @@ window.postExploit = function()
     }, 100);
 };
 </script>
-<script src="webkit.js"></script>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
-<select id="select1">
-<option value="value1">Value1</option>
-</select>
 </body>
 </html>

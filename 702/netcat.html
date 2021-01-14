@@ -23,18 +23,16 @@ function done()
 {
     if(main_ret == 0 || main_ret == 179)
     {
-        alert("Jailbreak failed! Reboot your PS4 and try again.");
+        alert("You're all set, you can now send your payload on port 9020");
         read_ptr_at(0);
     }
     else
-        alert("You're all set!");
+        alert("Jailbreak failed! Reboot your PS4 and try again.");
 }
 
 window.midExploit = function()
 {
-    if(document.location.hash)
-{
-        preloadScripts(['wolf/kex.js', 'wolf/c-code.js'], go);
+    preloadScripts(['webkit/702.js', 'webkit/jb.js', 'webkit/mira.js', 'webkit/code.js'], go);
 }
 
 window.postExploit = function()
@@ -47,12 +45,11 @@ window.postExploit = function()
     }, 100);
 };
 </script>
-<script src="wolf/webkit.js"></script>
+<script src="webkit/utils.js"></script>
+<script src="webkit/int64.js"></script>
+<script src="webkit/ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
-<select id="select1">
-<option value="value1">Value1</option>
-</select>
 </body>
 </html>

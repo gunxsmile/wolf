@@ -4,10 +4,6 @@
 </head>
 <body style="background-color:#000000;color:white;text-align:center;font-size:25px" onload="go()"><br>
 <script>
-if(document.cookie.indexOf('kex=0') >= 0)
-    document.location.href = 'index.html';
-</script>
-<script>
 function print(){}
 
 var scriptCode = '';
@@ -31,18 +27,17 @@ function done()
         read_ptr_at(0);
     }
     else
-        alert("You're all set!");
-		read_ptr_at(0);
+        alert("Jailbreak failed! Reboot your PS4 and try again.");
 }
 
 window.midExploit = function()
 {
-        preloadScripts(['jb.js', 'mira2b.js', 'loader.js'], go);
+        preloadScripts(['702.js', 'jb.js', 'mira.js', 'mira2b.js', 'c-code.js'], go);
+
 }
 
 window.postExploit = function()
 {
-    document.cookie = 'kex=0';
     setTimeout(function() //update the screen one last time...
     {
         eval.call(window, scriptCode);
@@ -50,9 +45,9 @@ window.postExploit = function()
     }, 100);
 };
 </script>
-<script src="utilsm.js"></script>
-<script src="int64m.js"></script>
-<script src="ps4m.js"></script>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>

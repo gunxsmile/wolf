@@ -475,7 +475,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("[+] PAYLODE PS4Debug LOADING...");
+	debug_log("PAYLODE PS4Debug LOADING ...");
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);

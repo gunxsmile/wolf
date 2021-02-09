@@ -394,7 +394,7 @@ function prepareUAF() {
 
 /* HTMLElement spray */
 function sprayHTMLTextArea() {
-	debug_log("Please Wait For Exploit Loading PAYLODE ...");
+	debug_log(" THE WOLF PAYLODE Please Wait ...");
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);

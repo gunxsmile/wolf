@@ -57,6 +57,9 @@ p:nth-child(6) {
 p:nth-child(7) {
   animation: var(--effect) .75s;
 }
+p:nth-child(8) {
+  animation: var(--effect) .80s;
+}
 
 @keyframes hover {
   0% {
@@ -67,7 +70,7 @@ p:nth-child(7) {
 
   20% {
     transform: scale(1);
-    color: red;
+    color: pink;
     -webkit-text-stroke: 3px white;
     filter: drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 3px white)drop-shadow(0 0 5px white)hue-rotate(10turn);
   }
